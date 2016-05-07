@@ -22,8 +22,8 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [JSStatusBarHUD showSuccess:@"加载成功"];
-//    [JSStatusBarHUD showError:@"加载失败"];
-//    [JSStatusBarHUD showLoading:@"正在加载中..."];
+    //    [JSStatusBarHUD showError:@"加载失败"];
+    //    [JSStatusBarHUD showLoading:@"正在加载中..."];
 }
 
 - (IBAction)success:(id)sender {

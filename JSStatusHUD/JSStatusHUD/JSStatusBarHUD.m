@@ -13,6 +13,8 @@
 
 /** 消息停留时间 */
 static CGFloat const JSMessageDuration = 2.0;
+/** 消息 显示\隐藏 的动画时间 */
+static CGFloat const JSAnimationDuration = 0.25;
 
 @implementation JSStatusBarHUD
 
@@ -28,11 +30,23 @@ static NSTimer *timer_;
  *  显示窗口
  */
 + (void)showWindow {
+    // frame 数据
+    CGFloat windowH = 20;
+    CGRect frame = CGRectMake(0, -windowH, [UIScreen mainScreen].bounds.size.width, windowH);
+    
+    // 显示窗口
+    window_.hidden = YES;
     window_ = [[UIWindow alloc] init];
     window_.backgroundColor = [UIColor blackColor];
     window_.windowLevel = UIWindowLevelAlert;
-    window_.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 20);
+    window_.frame = frame;
     window_.hidden = NO;
+    
+    // 动画
+    frame.origin.y = 0;
+    [UIView animateWithDuration:JSAnimationDuration animations:^{
+        window_.frame = frame;
+    }];
 }
 
 /**
@@ -75,7 +89,7 @@ static NSTimer *timer_;
  *  显示成功信息
  */
 + (void)showSuccess:(NSString *)msg {
-    [self showMessage:msg image:[UIImage imageNamed:@"success"]];
+    [self showMessage:msg image:[UIImage imageNamed:@"JSStatusHUD.bundle/success"]];
     
 }
 
@@ -83,16 +97,19 @@ static NSTimer *timer_;
  *  显示失败信息
  */
 + (void)showError:(NSString *)msg {
-    [self showMessage:msg image:[UIImage imageNamed:@"error"]];
+    [self showMessage:msg image:[UIImage imageNamed:@"JSStatusHUD.bundle/error"]];
 }
 
 /**
  *  显示正在处理信息
  */
 + (void)showLoading:(NSString *)msg {
+    // 停止定时器
+    [timer_ invalidate];
+    timer_ = nil;
+    
     // 显示窗口
     [self showWindow];
-
     
     // 文字
     UILabel *label = [[UILabel alloc] init];
@@ -119,8 +136,15 @@ static NSTimer *timer_;
  *  隐藏
  */
 + (void)hide {
-    window_ = nil;
-    timer_ = nil;
+    [UIView animateWithDuration:JSAnimationDuration animations:^{
+        //
+        CGRect frame = window_.frame;
+        frame.origin.y = - window_.frame.size.height;
+        window_.frame = frame;
+    } completion:^(BOOL finished) {
+        window_ = nil;
+        timer_ = nil;
+    }];
 }
 
 @end

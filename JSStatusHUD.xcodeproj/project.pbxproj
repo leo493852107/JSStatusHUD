@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3094DD01CDDE36A000876C7 /* JSStatusBarHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B3094DCE1CDDE36A000876C7 /* JSStatusBarHUD.m */; };
+		B3094DD11CDDE36A000876C7 /* JSStatusHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B3094DCF1CDDE36A000876C7 /* JSStatusHUD.bundle */; };
 		B30F61981CDD99AF00E7B159 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F61971CDD99AF00E7B159 /* main.m */; };
 		B30F619B1CDD99AF00E7B159 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F619A1CDD99AF00E7B159 /* AppDelegate.m */; };
 		B30F619E1CDD99AF00E7B159 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F619D1CDD99AF00E7B159 /* ViewController.m */; };
 		B30F61A11CDD99AF00E7B159 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B30F619F1CDD99AF00E7B159 /* Main.storyboard */; };
 		B30F61A31CDD99AF00E7B159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B30F61A21CDD99AF00E7B159 /* Assets.xcassets */; };
 		B30F61A61CDD99AF00E7B159 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B30F61A41CDD99AF00E7B159 /* LaunchScreen.storyboard */; };
-		B30F61AF1CDD9A0400E7B159 /* JSStatusBarHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F61AE1CDD9A0400E7B159 /* JSStatusBarHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B3094DCD1CDDE36A000876C7 /* JSStatusBarHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSStatusBarHUD.h; sourceTree = "<group>"; };
+		B3094DCE1CDDE36A000876C7 /* JSStatusBarHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSStatusBarHUD.m; sourceTree = "<group>"; };
+		B3094DCF1CDDE36A000876C7 /* JSStatusHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JSStatusHUD.bundle; sourceTree = "<group>"; };
 		B30F61931CDD99AF00E7B159 /* JSStatusHUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSStatusHUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30F61971CDD99AF00E7B159 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B30F61991CDD99AF00E7B159 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -27,8 +31,6 @@
 		B30F61A21CDD99AF00E7B159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B30F61A51CDD99AF00E7B159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B30F61A71CDD99AF00E7B159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B30F61AD1CDD9A0400E7B159 /* JSStatusBarHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSStatusBarHUD.h; sourceTree = "<group>"; };
-		B30F61AE1CDD9A0400E7B159 /* JSStatusBarHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSStatusBarHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3094DCC1CDDE36A000876C7 /* JSStatusHUD */ = {
+			isa = PBXGroup;
+			children = (
+				B3094DCD1CDDE36A000876C7 /* JSStatusBarHUD.h */,
+				B3094DCE1CDDE36A000876C7 /* JSStatusBarHUD.m */,
+				B3094DCF1CDDE36A000876C7 /* JSStatusHUD.bundle */,
+			);
+			path = JSStatusHUD;
+			sourceTree = "<group>";
+		};
 		B30F618A1CDD99AF00E7B159 = {
 			isa = PBXGroup;
 			children = (
@@ -61,8 +73,7 @@
 		B30F61951CDD99AF00E7B159 /* JSStatusHUD */ = {
 			isa = PBXGroup;
 			children = (
-				B30F61AD1CDD9A0400E7B159 /* JSStatusBarHUD.h */,
-				B30F61AE1CDD9A0400E7B159 /* JSStatusBarHUD.m */,
+				B3094DCC1CDDE36A000876C7 /* JSStatusHUD */,
 				B30F61991CDD99AF00E7B159 /* AppDelegate.h */,
 				B30F619A1CDD99AF00E7B159 /* AppDelegate.m */,
 				B30F619C1CDD99AF00E7B159 /* ViewController.h */,
@@ -142,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3094DD11CDDE36A000876C7 /* JSStatusHUD.bundle in Resources */,
 				B30F61A61CDD99AF00E7B159 /* LaunchScreen.storyboard in Resources */,
 				B30F61A31CDD99AF00E7B159 /* Assets.xcassets in Resources */,
 				B30F61A11CDD99AF00E7B159 /* Main.storyboard in Resources */,
@@ -157,7 +169,7 @@
 			files = (
 				B30F619E1CDD99AF00E7B159 /* ViewController.m in Sources */,
 				B30F619B1CDD99AF00E7B159 /* AppDelegate.m in Sources */,
-				B30F61AF1CDD9A0400E7B159 /* JSStatusBarHUD.m in Sources */,
+				B3094DD01CDDE36A000876C7 /* JSStatusBarHUD.m in Sources */,
 				B30F61981CDD99AF00E7B159 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +319,7 @@
 				B30F61AC1CDD99AF00E7B159 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
