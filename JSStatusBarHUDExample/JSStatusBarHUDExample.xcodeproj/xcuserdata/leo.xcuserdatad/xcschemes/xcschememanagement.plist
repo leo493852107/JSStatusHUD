@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>JSStatusHUD.xcscheme</key>
+		<key>JSStatusBarHUDExample.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>B30F61921CDD99AF00E7B159</key>
+		<key>B3094DDA1CDDE46D000876C7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

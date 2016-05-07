@@ -17,39 +17,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcF-7k-ttb">
-                                <rect key="frame" x="31" y="44" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7i-hL-Syw">
+                                <rect key="frame" x="32" y="58" width="46" height="30"/>
                                 <state key="normal" title="成功"/>
                                 <connections>
-                                    <action selector="success:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h9l-b8-3Ld"/>
+                                    <action selector="success:" destination="BYZ-38-t0r" eventType="touchUpInside" id="21W-AC-FFQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOc-9Z-Eq7">
-                                <rect key="frame" x="31" y="121" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjB-Yw-Ndn">
+                                <rect key="frame" x="32" y="135" width="46" height="30"/>
                                 <state key="normal" title="失败"/>
                                 <connections>
-                                    <action selector="error:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vux-z2-Ikk"/>
+                                    <action selector="error:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RBX-Ey-i7X"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xld-Mh-Mww">
-                                <rect key="frame" x="31" y="216" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZd-EI-L28">
+                                <rect key="frame" x="32" y="230" width="46" height="30"/>
                                 <state key="normal" title="加载"/>
                                 <connections>
-                                    <action selector="loading:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oRh-tf-zOK"/>
+                                    <action selector="loading:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YGQ-ZN-DSO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YC3-Mp-yvJ">
-                                <rect key="frame" x="31" y="302" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cto-cc-CNP">
+                                <rect key="frame" x="32" y="316" width="46" height="30"/>
                                 <state key="normal" title="隐藏"/>
                                 <connections>
-                                    <action selector="hide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QiY-NW-hD9"/>
+                                    <action selector="hide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Yw-qK-RO1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Avc-6e-FfT">
-                                <rect key="frame" x="31" y="378" width="60" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMn-R5-KZR">
+                                <rect key="frame" x="32" y="392" width="60" height="30"/>
                                 <state key="normal" title="普通文字"/>
                                 <connections>
-                                    <action selector="message:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zo9-HF-adA"/>
+                                    <action selector="message:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8w2-Ee-OiZ"/>
                                 </connections>
                             </button>
                         </subviews>

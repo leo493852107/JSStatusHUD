@@ -1,6 +1,6 @@
 //
 //  ViewController.h
-//  JSStatusHUD
+//  JSStatusBarHUDExample
 //
 //  Created by leo on 5/7/16.
 //  Copyright © 2016 leo. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  ViewController.m
-//  JSStatusHUD
+//  JSStatusBarHUDExample
 //
 //  Created by leo on 5/7/16.
 //  Copyright © 2016 leo. All rights reserved.
@@ -18,12 +18,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [JSStatusBarHUD showSuccess:@"加载成功"];
-    //    [JSStatusBarHUD showError:@"加载失败"];
-    //    [JSStatusBarHUD showLoading:@"正在加载中..."];
 }
 
 - (IBAction)success:(id)sender {
